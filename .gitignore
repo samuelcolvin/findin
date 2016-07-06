@@ -1,0 +1,6 @@
+node_modules
+env
+libs
+.idea
+__pycache__/
+*.py[cod]

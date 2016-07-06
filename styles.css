@@ -1,0 +1,76 @@
+html, body {
+  background-color: #21252B;
+  color: #c6cfde;
+  font-family: 'Ubuntu', 'Helvetica Neue', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+#console-container {
+  overflow-y: auto;
+  margin: 8px 4px;
+  padding: 6px;
+  background-color: #343944;
+  height: 100%;
+}
+
+#console-container::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+#console-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+#console {
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.f-result {
+  flex-direction: row;
+  display: flex;
+}
+
+.f-result > div {
+  padding-top: 3px;
+}
+
+.ln {
+  width: 50px;
+  /*height: 100%;*/
+  border-right: 1px solid #dee1e6;
+  color: #dee1e6;
+  text-align: right;
+  padding-right: 5px;
+  height: inherit;
+}
+
+.str {
+  white-space: pre;
+  word-wrap: break-word;
+  margin-left: 10px;
+  line-height: 17px;
+}
+
+.str .match {
+  color: #0a0;
+}
+
+h3 {
+  color: #9dbcf1;
+  margin-bottom: 3px;
+  font-size: 1.08em;
+  font-weight: normal;
+}
+
+#info {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+#info .v {
+  color: lightgreen;
+}

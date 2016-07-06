@@ -1,0 +1,19 @@
+{
+  "name": "findin",
+  "version": "0.0.1",
+  "description": "findin",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "find",
+    "search"
+  ],
+  "author": "Samuel Colvin",
+  "license": "MIT",
+  "homepage": "https://github.com/samuelcolvin/findin",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}

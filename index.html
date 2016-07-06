@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>findin</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      this is the header
+    </header>
+    <div id="results"></div>
+  </body>
+
+  <template>
+    <div id="console-container">
+      <div id="console">
+        {{#results}}
+          <div class="result">
+            <h3>{{ path }}</h3>
+            {{#file_results}}
+              <div class="f-result">
+                <div class="ln">{{ ln }}</div>
+                <div class="str">{{#lr}}{{ bf }}<span class="match">{{ m }}</span>{{/lr}}{{ end }}</div>
+              </div>
+            {{/file_results}}
+          </div>
+        {{/results}}
+      </div>
+    </div>
+    <div id="info">
+      search term: <span class="v">{{ search_term }}</span>,
+      results found: <span class="v">{{ result_count }}</span>,
+      time taken: <span class="v">{{ time_taken }}</span>,
+      files filtered: <span class="v">{{ files_filtered }}</span>,
+      matching files: <span class="v">{{ matching_files }}</span>,
+      files with results: <span class="v">{{ files_with_results }}</span>
+    </div>
+  </template>
+  <!--<script src="./libs/jquery.min.js"></script>-->
+  <!--<script src="./libs/mustache.min.js"></script>-->
+  <!--<script src="./app.js"></script>-->
+  <script>
+    var $ = require('./libs/jquery.min')
+    var Mustache = require('./libs/mustache.min')
+    require('./app.js')
+  </script>
+</html>
